@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-R" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DLS Façade - Assistant Devis</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'media', // or 'class'
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                primary: '#005A9C', // A professional blue
+                secondary: '#FDB813', // A warm, contrasting yellow/orange
+                light: '#F0F4F8',
+                dark: '#1A202C',
+              },
+            }
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.29.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
